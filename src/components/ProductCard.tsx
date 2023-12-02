@@ -1,4 +1,5 @@
 import Image from "./Image"
+import Button from "../UI/Button"
 interface Iprops {
 
 }
@@ -23,8 +24,12 @@ function ProductCard({}: Iprops) {
                 <Image className="w-10 h-10 rounded-full object-contain" imageURL="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt='PC' />
             </div>
             <div className="flex flex-row items-center justify-between space-x-2 mt-3">
-                <button className=" bg-indigo-700 w-full p-2 rounded-md text-white">Edit</button>
-                <button className=" bg-red-700 w-full p-2 rounded-md text-white">Delete</button>
+                <Button className=" bg-indigo-700" width="w-full" >Edit</Button>
+                <Button className=" bg-indigo-700" width="w-full">Edit</Button>
+                <Button className=" bg-red-700" width="w-full">Delete</Button>
+                <Button className=" bg-gray-700" width="w-full">Loading</Button>
+                <Button className=" bg-green-700" width="w-full">Success</Button>
+                <Button className=" bg-gray-300" width="w-full">Cancel</Button>
             </div>
         </div>
     )
