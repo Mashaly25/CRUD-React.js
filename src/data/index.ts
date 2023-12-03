@@ -1,6 +1,6 @@
 import { v4 as uuid } from "uuid"
 import { Iproduct } from "../interfaces";
-const productList: Iproduct[]= [
+export const productList: Iproduct[]= [
     {
         id: uuid(),
         title: "Nike Shoes",
